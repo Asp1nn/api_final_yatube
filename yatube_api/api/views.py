@@ -4,7 +4,8 @@ from rest_framework.mixins import CreateModelMixin, ListModelMixin
 
 from .models import Post, Group, Follow
 from .permissions import IsAuthorOrReadOnly
-from .serializers import CommentSerializer, PostSerializer, GroupSerializer, FollowSerializer
+from .serializers import (CommentSerializer, PostSerializer,
+                          GroupSerializer, FollowSerializer)
 
 
 class PostViewSet(viewsets.ModelViewSet):
