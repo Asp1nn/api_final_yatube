@@ -9,7 +9,8 @@ from .serializers import (CommentSerializer, PostSerializer,
                           GroupSerializer, FollowSerializer)
 
 
-class CreateListViewSet(CreateModelMixin, ListModelMixin, viewsets.GenericViewSet):
+class CreateListViewSet(CreateModelMixin, ListModelMixin,
+                        viewsets.GenericViewSet):
     pass
 
 
